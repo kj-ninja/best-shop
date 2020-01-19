@@ -244,7 +244,7 @@ a {
 
 .offer-border-red {
     background-color: var(--red-color);
-    bottom: 80px;
+    bottom: 70px;
 }
 
 .offer-border-mint {
@@ -483,3 +483,166 @@ a {
     color: var(--mint-color);
     border: 1px solid var(--mint-color);
 }
+
+/*Contact section styles*/
+.page-contact {
+    width: 896px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-title {
+    font-size: 49px;
+    line-height: 59px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 22px;
+}
+
+.contact-text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 42px;
+}
+
+.contact-list {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--gray);
+    display: flex;
+}
+
+.contact-list li:first-child::before {
+    content: url("../assets/Mail Icon.svg");
+    padding-right: 10px;
+}
+
+.contact-list li:last-child:before {
+    content: url("../assets/Phone Icon.svg");
+}
+
+.contact-list li {
+    margin-right: 34px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/*Form styles*/
+form {
+    position: relative;
+}
+
+
+.form-container {
+    width: 440px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+    font-weight: 700;
+    color: var(--blue-color);
+}
+
+.form-input {
+    border: 0;
+    border-bottom: 1px solid var(--medium-gray);
+    height: 42px;
+    margin-bottom: 42px;
+}
+
+.form-email {
+    margin-bottom: 30px;
+}
+
+/*Custom checkbox*/
+/* Customize the label (the container) */
+.check-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: var(--dark-gray);
+    line-height: 17px;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.form-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid var(--medium-gray);
+    border-radius: 4px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.form-check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.form-container input:checked ~ .form-check:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-container .form-check:after {
+    left: 9px;
+    top: 3px;
+    width: 5px;
+    height: 13px;
+    border: solid var(--blue-color);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form-btn {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--white-color);
+    padding: 20px 97px;
+    background-color: var(--blue-color);
+    border-radius: 35px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    position: absolute;
+    right: 0;
+    margin: 20px 0 59px 0;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.form-btn:hover{
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+
+
