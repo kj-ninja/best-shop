@@ -1,3 +1,11 @@
+/*Pytania do mentora:*/
+/*1. Jak zmienic background-color psuedoelementu selection w inpucie? (selection nie dziala, dlaczego?)*/
+/*2. Jak dziala sticky navbar? Jak mozna go ustawic na navbara?*/
+/*3. Jak zrobic ciekawy hover w social media np. po najechaniu powieksza sie ikonka facebooka nie przesuwajac
+niczego obok?
+
+Nie oczekuje odpowiedzi jak to zrobic ale mile widziane wskazowki, z gory dziekuje!*/
+
 :root {
     --blue-color: #08A6E4;
     --red-color: #FB3B64;
@@ -19,6 +27,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .container {
@@ -26,6 +35,7 @@ a {
     margin: 0 auto;
 }
 
+/*h2 styles*/
 .header-styles {
     font-size: 36px;
     line-height: 43px;
@@ -69,7 +79,6 @@ a {
     color: var(--gray);
     padding: 23px 25px;
     border-bottom: 4px solid transparent;
-    cursor: pointer;
 }
 
 .header-nav-list a:hover {
@@ -110,7 +119,6 @@ a {
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
-    cursor: pointer;
     transition: 0.3s;
     border: 1px solid transparent;
 }
@@ -133,9 +141,6 @@ a {
 }
 
 .info-title {
-    font-size: 36px;
-    line-height: 43px;
-    font-family: 'Raleway', sans-serif;
     margin: 106px 0 101px;
 }
 
@@ -228,9 +233,6 @@ a {
 }
 
 .offer-title {
-    font-size: 36px;
-    line-height: 43px;
-    font-family: 'Raleway', sans-serif;
     margin-bottom: 30px;
 }
 
@@ -353,9 +355,6 @@ a {
 }
 
 .pricing-title {
-    font-size: 36px;
-    line-height: 43px;
-    font-family: 'Raleway', sans-serif;
     padding-top: 106px;
     margin-bottom: 50px;
 }
@@ -453,7 +452,6 @@ a {
     color: var(--white-color);
     padding: 5px 57px;
     border-radius: 23px;
-    cursor: pointer;
     transition: 0.3s;
     border: 1px solid transparent;
 }
@@ -644,7 +642,7 @@ form label {
     transition: 0.3s;
 }
 
-.form-btn:hover{
+.form-btn:hover {
     background-color: var(--white-color);
     color: var(--blue-color);
     border: 1px solid var(--blue-color);
@@ -675,7 +673,6 @@ footer .container {
     font-weight: 300;
     color: var(--blue-color);
     padding: 17px 0 7px 0;
-    cursor: pointer;
 }
 
 .footer-copyrights {
@@ -689,17 +686,6 @@ footer .container {
     align-items: center;
 }
 
-.footer-facebook {
-    cursor: pointer;
-}
-
-.footer-twitter {
-    cursor: pointer;
-}
-
 .footer-facebook-img {
     margin-left: 20px;
 }
-
-
-
