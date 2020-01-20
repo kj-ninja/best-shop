@@ -46,6 +46,9 @@ a {
 .page-header {
     box-shadow: 0 3px 6px #00000029;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--white-color);
 }
 
 .page-header .container {
@@ -88,7 +91,7 @@ a {
 
 /*Banner section styles*/
 .page-banner {
-    height: calc(100vh - 70px);
+    height: 100vh;
     background-image: url("../assets/Background.png");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -208,7 +211,7 @@ a {
 /*Offer section styles*/
 .page-offer {
     background-color: #F7F7F7;
-    padding: 106px 0 105px 0;
+    padding: 106px 0 75px 0;
 }
 
 .offer-container {
