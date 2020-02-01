@@ -2,7 +2,7 @@
 
 
 
-Here is the link to the site. Enjoy! http://coders-lab.coderaf.com/project1/
+Here is link to the site. Enjoy! http://coders-lab.coderaf.com/project1/
 
 
 ## Coders lab project_1
