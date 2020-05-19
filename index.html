@@ -158,19 +158,21 @@
         </div>
     </section>
 
+    <!--Calculator section-->
     <section class="page-calculator">
         <h2 class="calculator-title header-styles">Calculate how much you’ll pay</h2>
         <div class="calculator-container">
             <div class="calculator-form-container">
                 <form action="">
                     <!--inputy walidowane tylko liczby calkowite wieksze od 0-->
-                    <input type="number" placeholder="Products quantity">
-                    <input type="number" placeholder="Estimated orders in month">
+                    <input type="number" placeholder="Products quantity" min="1" id="products-quantity">
+                    <input type="number" placeholder="Estimated orders in month" min="1" id="orders-quantity">
                     <!-- Tutaj dropdown-->
-                    <select name="" id="" placeholder="Choose package">
+                    <select name="" id="package" placeholder="Choose package">
                         <option value="" disabled selected>Choose package</option>
-                        <option value="">cos tam</option>
-                        <option value="">tu tez cos tam</option>
+                        <option value="Basic">Basic</option>
+                        <option value="Professional">Professional</option>
+                        <option value="Premium">Premium</option>
                     </select>
                     <label class="check-container">Accounting
                         <input type="checkbox" class="first">
@@ -181,6 +183,37 @@
                         <span class="form-check"></span>
                     </label>
                 </form>
+            </div>
+            <div class="calculator-summary">
+                <div class="calculator-element invisible-products">
+                    <span>Products</span>
+                    <span id="products-price"></span>
+                    <span id="products-total"></span>
+                </div>
+                <div class="calculator-element invisible-orders">
+                    <span>Orders</span>
+                    <span id="orders-quantity invisible"></span>
+                    <span id="orders-total"></span>
+                </div>
+                <div class="calculator-element invisible-package">
+                    <span>Package</span>
+                    <span id="package-price"></span>
+                    <span id="package-total"></span>
+                </div>
+                <div class="calculator-element invisible-acc">
+                    <span>Accounting</span>
+                    <span></span>
+                    <span id="calculator-acc-price">35$</span>
+                </div>
+                <div class="calculator-element invisible-terminal">
+                    <span>Terminal</span>
+                    <span></span>
+                    <span id="calculator-terminal-price">5$</span>
+                </div>
+                <div class="calculator-total invisible-total">
+                    <span>Total</span>
+                    <span id="total-price"></span>
+                </div>
             </div>
         </div>
     </section>
@@ -235,5 +268,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
