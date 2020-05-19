@@ -752,8 +752,7 @@ footer .container {
 
 .calculator-summary {
     width: 500px;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 .calculator-element {
@@ -786,8 +785,10 @@ footer .container {
     display: flex;
     justify-content: space-between;
     color: #fff;
-    align-self: flex-end;
     margin-top: 22px;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
 }
 
 .calculator-total span:last-of-type {
@@ -796,7 +797,7 @@ footer .container {
     line-height: 24px;
 }
 
-.invisible-products, .invisible-orders, .invisible-package, .invisible-acc, .invisible-terminal, .invisible-total {
+.invisible-products, .invisible-orders, .invisible-package, .invisible-acc, .invisible-terminal {
     display: none;
 }
 
