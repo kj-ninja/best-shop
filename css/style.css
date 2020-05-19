@@ -684,3 +684,68 @@ footer .container {
 .footer-facebook-img {
     margin-left: 20px;
 }
+
+/*Calculator section*/
+.page-calculator {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    background-color: #F7F7F7;
+    padding: 87px 200px 109px 200px;
+}
+
+.calculator-title {
+    margin-bottom: 52px;
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: space-around;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.calculator-form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+}
+
+.calculator-form-container input, select {
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px #08A6E429;
+    border: 1px solid var(--blue-color);
+    border-radius: 6px;
+    padding: 11px 20px;
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.calculator-form-container select {
+    background-color: #fff;
+}
+
+/* Show the checkmark when checked */
+.first:checked ~ .form-check:after,
+.second:checked ~ .form-check:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.calculator-form-container .form-check:after {
+    left: 9px;
+    top: 3px;
+    width: 5px;
+    height: 13px;
+    border: solid var(--blue-color);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.calculator-summary {
+    width: 385px;
+    border: 1px solid red;
+}
